@@ -1,0 +1,220 @@
+/* 
+Made By: Asjid Ahmed
+Date: 20/08/2022
+Code Name: Frost
+Edited Version 0.1
+*/
+
+
+/*==============
+ Imports Start
+ =============*/
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+
+/*================
+ Imports Start
+ ===============*/
+
+
+/*---------------------------------------------------------------------------------------------------------*/
+
+
+/*================
+ Index.html Start
+ ===============*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    position: absolute;
+    position: fixed;
+    background-color: rgb(233, 233, 233);
+    /* width: 434px; */
+    height: 100vh;
+    font-family: 'Fira Sans', sans-serif;
+    transition: transform 0.3s ease-in;
+}
+
+.sidebar nav {
+    padding: 70px;
+}
+
+.sidebar nav li {
+    list-style: none;
+    font-size: 30px;
+    padding: 33px 0;
+}
+
+.sidebar nav li a {
+    text-decoration: none;
+    color: black;
+    transform: scale(10);
+    transition: all 0.2s ease-in-out 0.1s;
+}
+
+.sidebar nav li a:hover {
+    text-decoration: none;
+    color: rgb(0, 138, 126);
+    transform: translateY(100px);
+    transition: all 0.2s ease-in-out 0.0s;
+    font-size: 35px;
+}
+
+.main {
+    /* background-color: yellow; */
+    width: 90vw;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+}
+
+.infoContainer {
+    /* background-color: rgb(0, 195, 255); */
+    height: 58vh;
+    width: 80vw;
+    margin: 144px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.devInfo {
+    display: flex;
+    padding: 10%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.hello {
+    font-size: 3em;
+}
+
+.name {
+    font-size: 3em;
+    font-weight: bold;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.about {
+    font-size: 2.5em;
+}
+
+.moreAbout {
+    margin-top: 23px;
+    font-size: 2em;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.buttons {
+    margin-top: 34px;
+    font-size: 10px;
+}
+
+.btn {
+    padding: 9px 14px;
+    border-radius: 18px;
+    color: white;
+    background-color: rgb(0, 138, 126);
+    font-weight: bold;
+    font-size: 2em;
+    margin: 3px 3px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: white;
+    color: rgb(0, 138, 126);
+    transform: translateY(5px);
+    transition: all 0.3s ease-in-out 0.1s;
+}
+
+.devPic img {
+    margin-top: 15%;
+    margin-right: 25%;
+    max-height: 80%;
+    max-width: 80%;
+    border: 10px solid rgb(0, 138, 126);
+    border-radius: 50%;
+}
+
+.devPic img:hover {
+    border: 10px solid rgb(0, 75, 69);
+    cursor: pointer;
+    transform: translateY(5px);
+    transition: all 0.3s ease-in-out 0.1s;
+}
+
+.hamburger {
+    /* --------------------- */
+    /* Show this menu after adding side navbar */
+    visibility: hidden;
+    /* --------------------- */
+    padding: 5px;
+    position: absolute;
+    position: fixed;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+
+.hamburger img {
+    transition: transform 0.5s;
+}
+
+.hamburger img:hover {
+    transform: scale(1.2);
+}
+
+.cross {
+    margin-left: 230px;
+}
+
+.sidebarGo {
+    /* position: absolute; */
+    transform: translate(-434px, 0px);
+}
+
+
+/*===============
+ Index.html End
+ ===============*/
+
+
+/*---------------------------------------------------------------------------------------------------------*/
+
+
+/*==================
+ Media Queries Start
+ ==================*/
+
+@media (max-width: 1500px) {
+    /* .sidebar {
+        transform: translate(-443px, 0px);
+        position: absolute;
+    } */
+    .infoContainer {
+        flex-direction: column-reverse;
+    }
+    .devPic {
+        display: none;
+    }
+    .buttons {
+        font-size: 5px;
+    }
+}
+
+
+/*================
+ Media Queries End
+ ================*/
+
+
+/*---------------------------------------------------------------------------------------------------------*/
